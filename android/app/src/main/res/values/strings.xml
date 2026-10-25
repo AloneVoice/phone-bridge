@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhoneBridge</string>
+    <string name="share_label">Wyślij na komputer</string>
+    <string name="receiving_title">Odbieranie z komputera</string>
+    <string name="keep_connected">Utrzymuj połączenie w tle</string>
+    <string name="keep_connected_hint">Wymagane, aby odbierać pliki z komputera. W pasku powiadomień będzie widoczna ikona PhoneBridge.</string>
+    <string name="auto_accept">Odbieraj bez pytania</string>
+    <string name="auto_accept_hint">Pliki od sparowanego komputera zapisują się od razu w folderze poniżej.</string>
+    <string name="save_folder">Folder zapisu</string>
+    <string name="offer_screenshots">Proponuj wysłanie zrzutów ekranu</string>
+    <string name="offer_screenshots_hint">Po zrobieniu zrzutu pojawi się powiadomienie – jedno stuknięcie wysyła go na komputer. Wymaga dostępu do zdjęć.</string>
+    <string name="forget">Zapomnij ten komputer</string>
+    <string name="computers_in_network">Komputery w tej sieci</string>
+    <string name="pick_computer_hint">Stuknij swój komputer, aby go sparować.</string>
+    <string name="search_again">Szukaj ponownie</string>
+    <string name="nothing_found">Nie znaleziono komputera. Sprawdź, czy PhoneBridge działa na komputerze i czy oba urządzenia są w tej samej sieci Wi-Fi.</string>
+    <string name="manual_ip_hint">Adres IP komputera</string>
+    <string name="manual_ip_title">Nie widzisz komputera? Wpisz jego adres IP:</string>
+    <string name="connect">Połącz</string>
+    <string name="notifications_off">Powiadomienia są wyłączone – telefon nie pokaże pytania o odbiór plików z komputera.</string>
+    <string name="enable_notifications">Włącz powiadomienia</string>
+    <string name="battery_exemption">Zezwól na działanie w tle</string>
+    <string name="how_to_title">Jak to działa</string>
+    <string name="how_to_send_title">Telefon → komputer</string>
+    <string name="how_to_send">W dowolnej aplikacji wybierz „Udostępnij” i stuknij swój komputer w górnym rzędzie (albo „Wyślij na komputer”).</string>
+    <string name="how_to_receive_title">Komputer → telefon</string>
+    <string name="how_to_receive">Kliknij plik prawym przyciskiem → „Pokaż więcej opcji” → „Wyślij na telefon” albo naciśnij skrót klawiaturowy PhoneBridge (domyślnie Ctrl+Alt+P).</string>
+    <string name="reject">Odrzuć</string>
+    <string name="save_to_downloads">Zapisz w: Pobrane/PhoneBridge</string>
+    <string name="other_folder">Wybierz inny folder…</string>
+</resources>

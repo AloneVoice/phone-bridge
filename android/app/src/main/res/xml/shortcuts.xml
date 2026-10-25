@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cel „Direct Share”: sparowany komputer pojawia się w górnym rzędzie systemowego udostępniania -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <share-target android:targetClass="pl.devdraw.phonebridge.ShareActivity">
+        <data android:mimeType="*/*" />
+        <category android:name="pl.devdraw.phonebridge.category.SHARE_TARGET" />
+    </share-target>
+</shortcuts>

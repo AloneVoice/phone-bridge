@@ -1,0 +1,52 @@
+<Window x:Class="PhoneBridge.App.Windows.IncomingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Style="{StaticResource PbWindow}"
+        Title="· odbiór plików"
+        Width="500" SizeToContent="Height"
+        WindowStartupLocation="CenterScreen" Topmost="True" ShowInTaskbar="True">
+    <StackPanel Margin="24,22,24,24">
+        <DockPanel>
+            <Border Style="{StaticResource PbTile}" DockPanel.Dock="Left" VerticalAlignment="Top">
+                <Path Data="{StaticResource PbGlyphPhone}" Stroke="{StaticResource PbOnCoralSoft}" Style="{StaticResource PbGlyph}" Margin="11" />
+            </Border>
+            <StackPanel Margin="14,0,0,0" VerticalAlignment="Center">
+                <TextBlock x:Name="Header" Style="{StaticResource PbTitle}" />
+                <TextBlock x:Name="Summary" Style="{StaticResource PbMutedText}" Margin="0,2,0,0" />
+            </StackPanel>
+        </DockPanel>
+
+        <Border Style="{StaticResource PbCardBorder}" Margin="0,18,0,0" Padding="0,4" MaxHeight="190">
+            <ListBox x:Name="FileList" BorderThickness="0" Background="Transparent"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <DockPanel>
+                            <TextBlock DockPanel.Dock="Right" Text="{Binding Size}" Foreground="{StaticResource PbMuted}" Margin="16,0,0,0" />
+                            <TextBlock Text="{Binding Name}" TextTrimming="CharacterEllipsis" />
+                        </DockPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+
+        <TextBlock Text="ZAPISZ W" Style="{StaticResource PbLabel}" Margin="2,18,0,6" />
+        <Border Style="{StaticResource PbCardBorder}" Padding="10">
+            <DockPanel>
+                <Border Style="{StaticResource PbTile}" Width="36" Height="36" CornerRadius="10" DockPanel.Dock="Left">
+                    <Path Data="{StaticResource PbGlyphFolder}" Stroke="{StaticResource PbOnCoralSoft}" Style="{StaticResource PbGlyph}" Margin="8" />
+                </Border>
+                <Button x:Name="ChangeFolder" DockPanel.Dock="Right" Content="Zmień…" Padding="14,6" Click="OnChangeFolder" />
+                <TextBlock x:Name="FolderText" Margin="12,0,12,0" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+            </DockPanel>
+        </Border>
+        <TextBlock x:Name="SpaceWarning" Foreground="{StaticResource PbError}" Margin="2,8,0,0" TextWrapping="Wrap" Visibility="Collapsed" />
+
+        <CheckBox x:Name="AutoAccept" Margin="2,16,0,0" Content="Zawsze zapisuj w tym folderze bez pytania" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,22,0,0">
+            <Button Content="_Odrzuć" Margin="0,0,10,0" IsCancel="True" Click="OnReject" />
+            <Button x:Name="AcceptButton" Content="O_dbierz" Style="{StaticResource PbPrimary}" IsDefault="True" Click="OnAccept" />
+        </StackPanel>
+    </StackPanel>
+</Window>

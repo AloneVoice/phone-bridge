@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- marka: koral + atrament + piasek (tak samo w aplikacji Windows) -->
+    <color name="brand_coral">#FF6A4D</color>
+
+    <color name="coral">#FF6A4D</color>
+    <color name="coral_soft">#FFE6DF</color>
+    <color name="on_coral_soft">#8A2A16</color>
+    <color name="sand">#F7F3EE</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="text_primary">#1C1B29</color>
+    <color name="text_muted">#6E6A7C</color>
+    <color name="line">#E9E2DA</color>
+    <color name="success">#2FB37A</color>
+
+    <color name="hero_bg">#1C1B29</color>
+    <color name="hero_text">#F7F3EE</color>
+    <color name="hero_muted">#A9A4B8</color>
+    <color name="hero_line_idle">#3D3A52</color>
+
+    <bool name="light_bars">true</bool>
+</resources>

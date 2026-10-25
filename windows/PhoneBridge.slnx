@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="PhoneBridge.App/PhoneBridge.App.csproj" />
+  <Project Path="PhoneBridge.Core/PhoneBridge.Core.csproj" />
+  <Project Path="PhoneBridge.Tests/PhoneBridge.Tests.csproj" />
+</Solution>

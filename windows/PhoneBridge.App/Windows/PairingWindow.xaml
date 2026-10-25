@@ -1,0 +1,30 @@
+<Window x:Class="PhoneBridge.App.Windows.PairingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Style="{StaticResource PbWindow}"
+        Title="· parowanie"
+        Width="460" SizeToContent="Height"
+        WindowStartupLocation="CenterScreen" Topmost="True">
+    <StackPanel Margin="24,22,24,24">
+        <DockPanel>
+            <Border Style="{StaticResource PbTile}" DockPanel.Dock="Left" VerticalAlignment="Top">
+                <Path Data="{StaticResource PbGlyphPhone}" Stroke="{StaticResource PbOnCoralSoft}" Style="{StaticResource PbGlyph}" Margin="11" />
+            </Border>
+            <StackPanel Margin="14,0,0,0" VerticalAlignment="Center">
+                <TextBlock x:Name="Header" Style="{StaticResource PbTitle}" />
+                <TextBlock x:Name="Address" Style="{StaticResource PbMutedText}" Margin="0,2,0,0" />
+            </StackPanel>
+        </DockPanel>
+
+        <TextBlock Text="Sprawdź, czy na telefonie widzisz ten sam kod:" Margin="0,22,0,12" TextWrapping="Wrap" />
+        <!-- kafelki cyfr – ten sam wygląd co w aplikacji Android -->
+        <StackPanel x:Name="CodeTiles" Orientation="Horizontal" HorizontalAlignment="Center" />
+        <TextBlock Text="Jeśli kody się różnią albo nie parujesz teraz telefonu, kliknij „Odrzuć”."
+                   Style="{StaticResource PbMutedText}" FontSize="12" Margin="0,16,0,0" HorizontalAlignment="Center" TextAlignment="Center" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,22,0,0">
+            <Button Content="_Odrzuć" Margin="0,0,10,0" IsCancel="True" Click="OnReject" />
+            <Button Content="Kody się zgadzają – _sparuj" Style="{StaticResource PbPrimary}" Click="OnAccept" />
+        </StackPanel>
+    </StackPanel>
+</Window>

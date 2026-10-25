@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="coral">#FF7D62</color>
+    <color name="coral_soft">#3A2320</color>
+    <color name="on_coral_soft">#FFC9BC</color>
+    <color name="sand">#14131C</color>
+    <color name="surface_card">#1F1D2B</color>
+    <color name="text_primary">#F3EFEA</color>
+    <color name="text_muted">#A29DB2</color>
+    <color name="line">#2E2B3D</color>
+    <color name="success">#3CCB8C</color>
+
+    <color name="hero_bg">#262338</color>
+
+    <bool name="light_bars">false</bool>
+</resources>

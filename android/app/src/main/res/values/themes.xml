@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.PhoneBridge" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/coral</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">@color/coral_soft</item>
+        <item name="colorOnPrimaryContainer">@color/on_coral_soft</item>
+        <item name="colorSecondary">@color/text_primary</item>
+        <item name="colorOnSecondary">@color/sand</item>
+        <item name="colorSecondaryContainer">@color/coral_soft</item>
+        <item name="colorOnSecondaryContainer">@color/on_coral_soft</item>
+        <item name="android:colorBackground">@color/sand</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorSurface">@color/sand</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_muted</item>
+        <item name="colorSurfaceContainerLowest">@color/surface_card</item>
+        <item name="colorSurfaceContainerLow">@color/surface_card</item>
+        <item name="colorSurfaceContainer">@color/surface_card</item>
+        <item name="colorSurfaceContainerHigh">@color/surface_card</item>
+        <item name="colorSurfaceContainerHighest">@color/line</item>
+        <item name="colorOutline">@color/text_muted</item>
+        <item name="colorOutlineVariant">@color/line</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">@bool/light_bars</item>
+        <item name="android:windowLightNavigationBar">@bool/light_bars</item>
+    </style>
+
+    <style name="Theme.PhoneBridge" parent="Base.PhoneBridge" />
+
+    <style name="Theme.PhoneBridge.Dialog" parent="Theme.Material3.DayNight.Dialog">
+        <item name="colorPrimary">@color/coral</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">@color/coral_soft</item>
+        <item name="colorOnPrimaryContainer">@color/on_coral_soft</item>
+        <item name="colorSecondaryContainer">@color/coral_soft</item>
+        <item name="colorOnSecondaryContainer">@color/on_coral_soft</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_muted</item>
+        <item name="colorSurfaceContainerHigh">@color/surface_card</item>
+        <item name="colorOutline">@color/text_muted</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <!-- nagłówki -->
+    <style name="TextAppearance.PhoneBridge.Section" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.PhoneBridge.Hint" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/text_muted</item>
+    </style>
+
+    <style name="Widget.PhoneBridge.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/surface_card</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="contentPadding">20dp</item>
+    </style>
+</resources>
